@@ -41,33 +41,17 @@ end
     puts "Goodbye"
   end 
   
-  # def run(songs_array)
-  #   puts "Please enter a command:" 
-  #   user_input = gets.strip
-  #   if user_input == "play"
-  #     play(songs_array)
-  #   elsif user_input == "list"
-  #     list(songs_array)
-  #   elsif user_input == "help"
-  #     help
-  #   end
-  #   exit_jukebox
-  # end 
-  
-  def run(song_list) 
-  answer = "nothing"
-  while answer != 'exit' do 
-    puts "Please enter a command:"
-    answer = gets.strip
-    if answer == "list"
-      list(song_list)
-    elsif answer == "play"
-      play(song_list)
-    elsif answer == "help"
+  def run(songs_array)
+    puts "Please enter a command:" 
+    user_input = gets.strip
+    if user_input == "play"
+      play(songs_array)
+    elsif user_input == "list"
+      list(songs_array)
+    elsif user_input == "help"
       help
-    elsif answer == "exit"
-      break
     end
-  end
-  exit_jukebox
-end 
+    exit_jukebox
+  end 
+  
+  
